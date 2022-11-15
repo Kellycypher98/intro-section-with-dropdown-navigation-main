@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap');
+
+body{
+font-family: 'Epilogue', sans-serif;
+}
+section h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+article{
+    margin-right:6em ;
+    font-size: 18px;
+    text-align: justify;
+}
+.mobile-img{
+    display: none;
+}
+#make{
+    display: block;
+}
+.navigation{
+    justify-content: space-between;
+}
+
+.far-end a{
+    margin-left: 1em;
+    text-decoration: none;
+    color: black;
+    
+}
+
+@media (max-width:900px) {
+    .section{
+        display: flex;
+        flex-direction:column-reverse;
+        margin-top: 0;
+    }
+    .mobile-img{
+        display: block;
+        margin-left: auto;
+            margin-right: auto;
+    }
+    .desktop-img{
+        display:none;
+    }
+    #make{
+        display: inline;
+    }
+    section h1 {
+        width: 100%;
+        font-size: 3rem;
+        font-weight: bold;
+        
+    }
+    .text{
+        text-align: center;
+       
+    }
+    article{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .learn{
+      text-align: center;
+    }
+    .icons{
+        padding-top: 0;
+    }
+         .offcanvas {
+             width: 250px !important;
+         }
+    
+         .offcanvas-start-lg {
+             top: 0;
+             right: 0;
+             border-right: 1px solid rgba(0, 0, 0, .2);
+             transform: translateX(100%);
+         }
+         }
+    
+         .navbar-nav li a {
+             color: rgb(7, 7, 7) !important;
+         }
+        .far-end{
+            
+        }
+
+
+}
+@media (min-width : 992px) {
+    .offcanvas {
+        visibility: visible;
+        position: relative;
+        background: none;
+        border: none;
+        justify-content: end;
+        color: rgb(3, 3, 3);
+    }
+}
